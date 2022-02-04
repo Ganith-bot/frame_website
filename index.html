@@ -1,0 +1,54 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Framed Photo</title>
+  
+  <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <style type="text/css">
+  h3
+  {
+    font-size: 25px !important;
+  }
+  canvas {
+  	border:5px solid black;
+  }
+  </style>
+</head>
+
+<body style="background-color: lightblue;">
+<div class="container">
+	<h3 class="btn btn-primary">Framed Photo Website</h3>
+	<hr>
+  <span>
+  <h5 style="font-weight: bold; color:white;" class="btn btn-info">Colour of Frame:
+  <input type="text" placeholder="R" id="input1" style="width: 70px;">
+  <input type="text" placeholder="G" id="input2" style="width: 70px;">
+  <input type="text" placeholder="B" id="input3" style="width: 70px;"></h5>
+  <br>
+  <br>
+  <a href="https://www.w3schools.com/colors/colors_rgb.asp" target="blank" style="color: black; text-decoration: none;">&#9432; Click For Picking RGB</a>
+  <br>
+  <br>
+  </span>
+  <br>
+  <button class="btn btn-warning" onclick="apply_filter1()">Change Frame Color</button>
+  <br>
+  <br>
+
+  <button onclick="take_snapshot()" class="btn btn-success">Take Snapshot</button>
+</div>
+
+<script src="main.js"></script>
+</body>
+
+</html>
+
